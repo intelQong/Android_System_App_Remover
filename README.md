@@ -21,8 +21,8 @@ or download it from [here](https://developer.android.com/studio/releases/platfor
 
 #### [](#-for-linux--mac)<g-emoji class="g-emoji" alias="penguin" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f427.png">🐧</g-emoji> For Linux / Mac:
 
-*   Clone this repository.
-*   Go to the 'Linux-MacOS' folder and Open Terminal in this path.
+*   Clone this repository ( `git clone https://github.com/intelQong/Android_System_App_Remover` )
+*   Go to the 'Linux-MacOS' folder and Open Terminal in this path. ( `cd Linux-MacOS` )
 *   Execute the specific bash script for your device.
 *   Make sure that the file is executable. If not use `sudo chmod +x filename.bash`
 *   Example: `./xiaomi.bash` or `./google.bash` or `sudo ./xiaomi.bash`
