@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Google Bloatware Remover tools for all android devices...
+# Google Pixel Bloatware Remover tools for all android devices...
 # Make sure you have ADB installed on your PC...
 
 ## Declaring array of packages to uninstall ##
@@ -39,8 +39,7 @@ declare -a arr=(
     "com.google.ar.lens"
     "com.google.android.apps.wellbeing"
     "com.android.chrome"
-    
-      "com.amazon.appmanager"
+    "com.amazon.appmanager"
     
     ############################################################
     ## Add Package Name Here ##
