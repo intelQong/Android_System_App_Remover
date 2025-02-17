@@ -19,6 +19,13 @@ or download it from [here](https://developer.android.com/studio/releases/platfor
 
 # [](#how-to-use)**How to use?**
 
+#### [](#-for-windows)<g-emoji class="g-emoji" alias="desktop_computer" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f5a5.png">🖥</g-emoji> For Windows:
+
+*   Clone this repository.
+*   Go to the 'Windows' folder and Open Command Prompt in this path.
+*   Execute the specific batch file for your device.
+*   Example: `xiaomi.bat` or `samsung.bat`
+*   
 #### [](#-for-linux--mac)<g-emoji class="g-emoji" alias="penguin" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f427.png">🐧</g-emoji> For Linux / Mac:
 
 *   Clone this repository ( `git clone https://github.com/intelQong/Android_System_App_Remover` )
