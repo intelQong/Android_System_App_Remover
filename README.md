@@ -35,9 +35,7 @@ or download it from [here](https://developer.android.com/studio/releases/platfor
 ### [](#-tested-on)<g-emoji class="g-emoji" alias="iphone" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4f1.png">📱</g-emoji> Tested On
 
 *   Pixel, POCO, Redmi, Xiaomi, Oppo, Realme, Vivo, Samsung, Oneplus, Walton, Techno, Symphony
-
+  
 **©️Copyright** - [Reajul Hasan Raju](https://twitter.com/rhraju03)
-
-
-***Modified & Updated by - [Mahmudul Hoque Khan](https://twitter.com/intel_Qong)***
+**Modified & Updated by - [Mahmudul Hoque Khan](https://x.com/intelQong))**
 
