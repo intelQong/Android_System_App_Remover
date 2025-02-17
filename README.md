@@ -21,8 +21,9 @@ or download it from [here](https://developer.android.com/studio/releases/platfor
 
 #### [](#-for-windows)<g-emoji class="g-emoji" alias="desktop_computer" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f5a5.png">🖥</g-emoji> For Windows:
 
-*   Clone this repository.
-*   Go to the 'Windows' folder and Open Command Prompt in this path.
+*   Dwonload this repository, [click here](https://github.com/intelQong/Android_System_App_Remover/archive/refs/heads/main.zip)
+*   Go to the 'Windows' folder and Open any file according to your phone's model in the path.
+*   If 
 *   Execute the specific batch file for your device.
 *   Example: `xiaomi.bat` or `samsung.bat`
 *   
