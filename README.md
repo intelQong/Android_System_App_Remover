@@ -37,5 +37,6 @@ or download it from [here](https://developer.android.com/studio/releases/platfor
 *   Pixel, POCO, Redmi, Xiaomi, Oppo, Realme, Vivo, Samsung, Oneplus, Walton, Techno, Symphony
   
 **©️Copyright** - [Reajul Hasan Raju](https://twitter.com/rhraju03)
+
 **Modified & Updated by - [Mahmudul Hoque Khan](https://x.com/intelQong))**
 
