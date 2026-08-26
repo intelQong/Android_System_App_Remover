@@ -10,6 +10,9 @@
 # Exit on unexpected errors in critical subshells, but keep interactive shell alive
 set -o pipefail
 
+# Ensure stdin is attached to terminal for curl | bash execution
+exec < /dev/tty 2>/dev/null || true
+
 # ------------------------------------------------------------------------------
 # Terminal Color Codes
 # ------------------------------------------------------------------------------

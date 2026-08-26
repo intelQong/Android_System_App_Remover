@@ -10,10 +10,29 @@
 [![Safety: 100% Reversible](https://img.shields.io/badge/Safety-100%25_Reversible-green.svg)](#-restoring-uninstalled-apps)
 
 <p align="center">
-  A modern, unified, single-file runner to automatically detect your connected phone model and safely remove bloatware, tracking services, telemetry, and OEM adware without root access.
+  A modern, unified, single-command runner to automatically detect your connected phone model and safely remove bloatware, tracking services, telemetry, and OEM adware without root access.
 </p>
 
 </div>
+
+---
+
+## ⚡ 1-Line Quick Run (No Git Clone Required)
+
+Run the debloater instantly with a single command:
+
+### 🐧 Linux & 🍎 macOS
+```bash
+curl -fsSL https://raw.githubusercontent.com/intelQong/Android_System_App_Remover/main/remover.sh | bash
+```
+*(Or using `wget`: `wget -qO- https://raw.githubusercontent.com/intelQong/Android_System_App_Remover/main/remover.sh | bash`)*
+
+---
+
+### 🖥️ Windows (PowerShell)
+```powershell
+irm https://raw.githubusercontent.com/intelQong/Android_System_App_Remover/main/remover.bat -OutFile remover.bat; .\remover.bat
+```
 
 ---
 
@@ -58,7 +77,7 @@
 
 ---
 
-## 🚀 Quick Start (Just 1 File to Run)
+## 🚀 Alternative: Manual Clone & Run
 
 ### 🐧 For Linux & 🍎 macOS
 
@@ -71,8 +90,6 @@ cd Android_System_App_Remover
 chmod +x remover.sh
 ./remover.sh
 ```
-
----
 
 ### 🖥️ For Windows
 
