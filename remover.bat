@@ -80,16 +80,10 @@ goto WAIT_FOR_DEVICE
 
 :DEVICE_FOUND
 :: Fetch Device Properties
-for /f "delims=" %%i in ('adb -s %DEVICE_SERIAL% shell getprop ro.product.manufacturer 2^>nul') do set "DEVICE_MANUF=%%i"
-for /f "delims=" %%i in ('adb -s %DEVICE_SERIAL% shell getprop ro.product.brand 2^>nul') do set "DEVICE_BRAND=%%i"
-for /f "delims=" %%i in ('adb -s %DEVICE_SERIAL% shell getprop ro.product.model 2^>nul') do set "DEVICE_MODEL=%%i"
-for /f "delims=" %%i in ('adb -s %DEVICE_SERIAL% shell getprop ro.build.version.release 2^>nul') do set "DEVICE_ANDR_VER=%%i"
-
-:: Clean trailing carriage returns
-set "DEVICE_MANUF=!DEVICE_MANUF:~0,-1!" 2>nul
-set "DEVICE_BRAND=!DEVICE_BRAND:~0,-1!" 2>nul
-set "DEVICE_MODEL=!DEVICE_MODEL:~0,-1!" 2>nul
-set "DEVICE_ANDR_VER=!DEVICE_ANDR_VER:~0,-1!" 2>nul
+for /f "tokens=*" %%i in ('adb -s %DEVICE_SERIAL% shell getprop ro.product.manufacturer 2^>nul') do set "DEVICE_MANUF=%%i"
+for /f "tokens=*" %%i in ('adb -s %DEVICE_SERIAL% shell getprop ro.product.brand 2^>nul') do set "DEVICE_BRAND=%%i"
+for /f "tokens=*" %%i in ('adb -s %DEVICE_SERIAL% shell getprop ro.product.model 2^>nul') do set "DEVICE_MODEL=%%i"
+for /f "tokens=*" %%i in ('adb -s %DEVICE_SERIAL% shell getprop ro.build.version.release 2^>nul') do set "DEVICE_ANDR_VER=%%i"
 
 :: Identify target profile
 set "TARGET_PROFILE=generic"

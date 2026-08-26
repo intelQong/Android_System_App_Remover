@@ -648,7 +648,6 @@ interactive_checklist() {
         echo -e "  • Type ${C_RED}'b'${C_RESET} to go Back to Main Menu\n"
 
         read -rp "Input command: " cmd
-        cmd=$(echo "$cmd" | tr -d '[:punct:]' || echo "$cmd")
 
         case "${cmd,,}" in
             b|back|q) return 0 ;;
@@ -664,7 +663,20 @@ interactive_checklist() {
                 ;;
             *)
                 for token in $cmd; do
-                    if [[ "$token" =~ ^[0-9]+$ ]] && [[ "$token" -ge 1 ]] && [[ "$token" -le "${#CANDIDATE_PKGS[@]}" ]]; then
+                    if [[ "$token" =~ ^([0-9]+)-([0-9]+)$ ]]; then
+                        local start="${BASH_REMATCH[1]}"
+                        local end="${BASH_REMATCH[2]}"
+                        for ((n=start; n<=end; n++)); do
+                            if (( n >= 1 && n <= ${#CANDIDATE_PKGS[@]} )); then
+                                local target_idx=$((n-1))
+                                if [[ "${CANDIDATE_SELECTED[$target_idx]}" -eq 1 ]]; then
+                                    CANDIDATE_SELECTED[$target_idx]=0
+                                else
+                                    CANDIDATE_SELECTED[$target_idx]=1
+                                fi
+                            fi
+                        done
+                    elif [[ "$token" =~ ^[0-9]+$ ]] && [[ "$token" -ge 1 ]] && [[ "$token" -le "${#CANDIDATE_PKGS[@]}" ]]; then
                         local target_idx=$((token-1))
                         if [[ "${CANDIDATE_SELECTED[$target_idx]}" -eq 1 ]]; then
                             CANDIDATE_SELECTED[$target_idx]=0
